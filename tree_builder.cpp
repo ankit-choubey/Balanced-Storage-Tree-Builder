@@ -9,9 +9,8 @@ struct Node {
     Node(int k) { key = k; h = 1; left = right = NULL; }
 };
 
-// --- 2. GLOBAL HELPERS (Simple If-Else) ---
+// --- 2. GLOBAL HELPERS ---
 
-// Helper to get height safely
 int getHeight(Node* n) { 
     if (n == NULL) {
         return 0;
@@ -20,7 +19,6 @@ int getHeight(Node* n) {
     }
 }
 
-// Helper to find maximum of two numbers
 int maxVal(int a, int b) {
     if (a > b) {
         return a;
@@ -35,7 +33,6 @@ int calcHeight(Node* n) {
     int l = calcHeight(n->left);
     int r = calcHeight(n->right);
     
-    // Ternary removed, using maxVal logic directly
     if (l > r) {
         return l + 1;
     } else {
@@ -112,7 +109,6 @@ public:
                 return count; 
             }
             
-            // Simple If-Else for movement
             if (key < cur->key) {
                 cur = cur->left;
             } else {
@@ -137,7 +133,6 @@ public:
     Node* rotate(Node* y, string type) {
         Node* x = NULL;
         
-        // Removed Ternary Operator
         if (type == "right") {
             x = y->left;
         } else {
@@ -154,7 +149,7 @@ public:
             x->left = y;
         }
         
-        // Update Heights using simple maxVal
+        // Update Heights 
         y->h = 1 + maxVal(getHeight(y->left), getHeight(y->right));
         x->h = 1 + maxVal(getHeight(x->left), getHeight(x->right));
         return x;
@@ -174,18 +169,17 @@ public:
         n->h = 1 + maxVal(getHeight(n->left), getHeight(n->right));
         int b = bf(n);
 
-        // Standard If logic for balancing
-        if (b > 1 && key < n->left->key) {
+        if (b > 1 && key < n->left->key) {      //LL
             return rotate(n, "right");
         }
-        if (b < -1 && key > n->right->key) {
+        if (b < -1 && key > n->right->key) {     //RR
             return rotate(n, "left");
         }
-        if (b > 1 && key > n->left->key) { 
+        if (b > 1 && key > n->left->key) {       //LR
             n->left = rotate(n->left, "left"); 
             return rotate(n, "right"); 
         }
-        if (b < -1 && key < n->right->key) { 
+        if (b < -1 && key < n->right->key) {     //RL
             n->right = rotate(n->right, "right"); 
             return rotate(n, "left"); 
         }
@@ -205,7 +199,6 @@ public:
                 return count; 
             }
             
-            // Simple If-Else movement
             if (key < cur->key) {
                 cur = cur->left;
             } else {
