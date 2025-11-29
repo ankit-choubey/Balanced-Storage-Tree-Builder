@@ -113,7 +113,7 @@ Project submitted for the partial fulfilment of the requirements for CSE 204.
 
 | Name                         | Role                    | ID            |
 |------------------------------|-------------------------|---------------|
-| Ankit Choubey               | Lead Developer & Logic  | AP24110010595 |
+| Ankit Choubey               | Logic Developer         | AP24110010595 |
 | Danaboyina Abhiram          | Research & Documentation| AP24110010593 |
 | Kilani Jyothirmayi Hanisha  | Testing & Validation    | AP24110010594 |
 | Kotha Bhaskara Balaji       | Algorithm Analysis      | AP24110010598 |
