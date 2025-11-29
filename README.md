@@ -117,7 +117,7 @@ Project submitted for the partial fulfilment of the requirements for CSE 204.
 | Danaboyina Abhiram          | Research & Documentation| AP24110010593 |
 | Kilani Jyothirmayi Hanisha  | Testing & Validation    | AP24110010594 |
 | Kotha Bhaskara Balaji       | Algorithm Analysis      | AP24110010598 |
-| Vaibhav Hindurao Dabade     | System Design           | AP24110010602 |
+| Vaibhav Hindurao Dabade     | Report Designing        | AP24110010602 |
 
 📜 License
 ----------
