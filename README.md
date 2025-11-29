@@ -99,10 +99,11 @@ Level 2:    1     3           6
 Performance Result:
 
 ```text
-Search for '6':
-BST Steps: 6 (Linear Scan)
-AVL Steps: 3 (Logarithmic Lookup)
-Winner: AVL was 2x faster.
+Search Value (-1 to exit): 4
+Status: FOUND
+BST Comparisons: 4
+AVL Comparisons: 1
+>> AVL was faster by 3 ops.
 ```
 
 👥 The Team (SRM University AP)
@@ -122,5 +123,3 @@ Project submitted for the partial fulfilment of the requirements for CSE 204.
 ----------
 
 This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
-
-Built with ❤️ by Master AK (CodeHashiraX)
